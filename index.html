@@ -764,7 +764,7 @@ function renderPaper(){
   <div class="p-info">
     <div><b>Công trình/ Project:</b> ${esc(c.project)||'<span class="empty-note">chưa nhập</span>'}</div>
     <div><b>Địa chỉ/ Address:</b> ${esc(c.address)}</div>
-    <div><b>NƠI GỬI/ Send by:</b> ${esc(c.sender)}</div>`;
+    <div><b>Nơi gửi/ Send by:</b> ${esc(c.sender)}</div>`;
   if(t==='ngay'){
     const w=s.weather;
     h+=`<div style="margin-top:3pt"><b>Thời tiết/ Weather:</b>
@@ -1041,7 +1041,7 @@ async function exportXlsx(){
   r=3;
   band(r++,1,9,`Công trình/ Project: ${c.project}`,{font:{bold:true}});
   band(r++,1,9,`Địa chỉ/ Address: ${c.address}`);
-  band(r++,1,9,`NƠI GỬI/ Send by: ${c.sender}`);
+  band(r++,1,9,`Nơi gửi/ Send by: ${c.sender}`);
 
   if(t==='ngay'){
     const w=s.weather;
